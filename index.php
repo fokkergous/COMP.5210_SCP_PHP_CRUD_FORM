@@ -177,7 +177,7 @@
         background: linear-gradient(145deg, rgba(12, 12, 12, 0.96), rgba(30, 30, 30, 0.9));
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.38);
         padding: 8px;
-        max-width: 520px;
+        max-width: min(520px, 100%);
       }
 
       /* Alerts */
@@ -206,6 +206,25 @@
         height: 1px;
         background: linear-gradient(90deg, transparent, #555, transparent);
         margin: 32px 0;
+      }
+
+      @media (max-width: 576px) {
+        .scp-header {
+          gap: 10px;
+          padding: 10px 14px;
+        }
+
+        .scp-header-divider,
+        .scp-header-subtitle {
+          display: none;
+        }
+
+        .btn-dark {
+          padding: 6px 10px;
+          font-size: 0.78rem;
+          white-space: nowrap;
+          flex-shrink: 0;
+        }
       }
     </style>
   </head>

@@ -161,6 +161,25 @@
         background: linear-gradient(90deg, transparent, #555, transparent);
         margin: 24px 0;
       }
+
+      @media (max-width: 576px) {
+        .scp-header {
+          gap: 10px;
+          padding: 10px 14px;
+        }
+
+        .scp-header-divider,
+        .scp-header-subtitle {
+          display: none;
+        }
+
+        .btn-dark {
+          padding: 6px 10px;
+          font-size: 0.78rem;
+          white-space: nowrap;
+          flex-shrink: 0;
+        }
+      }
     </style>
   </head>
   <body>
